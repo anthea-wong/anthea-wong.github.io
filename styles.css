@@ -157,6 +157,43 @@ nav ul {
     overflow: hidden;
 }
 
+.hiddenDesc {
+    background-color:#679289;
+    color: white;
+    opacity: 1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    visibility: hidden;
+    bottom: 65px;
+    height: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0px;
+    font-size: 14px;
+    text-align: center;
+    color: rgba (255, 0, 255, 0);
+    text-decoration: none !important;
+    padding-left: 2px;
+    padding-right: 2px;
+    opacity: 0;
+
+}
+
+.galleryItem:hover .hiddenDesc {
+    display: flex;
+    visibility: visible;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    opacity: 1;
+    transition: visibility 0s, opacity 0.5s linear;
+}
+
 .galleryItemImg:hover {
     opacity: 65%;
     transition-duration: 0.5s;
@@ -174,6 +211,7 @@ nav ul {
 .imgLink {
     width: 100%;
     height: 100%;
+    text-decoration: none;
 }
 
 /* animations */
@@ -571,7 +609,7 @@ nav ul {
     }
 
     .container {
-    height: calc(100%+270px);
+        height: calc(100%+270px);
     }
     
     .bottomContact {
